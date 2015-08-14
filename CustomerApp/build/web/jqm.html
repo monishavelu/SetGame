@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head >
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Table.css">
+         <script src="libs/handlebars-v3.0.3.js"></script>
+        
+        <script src="libs/jquery-2.1.4.js"></script>
+        <script src="libs/jquery.mobile-1.4.5.js"></script>
+        <link rel="stylesheet" href="libs/jquery.mobile-1.4.5.css">
+         <script id="blogs-item-template" type="text/x-handlebars">
+            <li class="list" id = "{{ img_id }}" style="border: solid 0px green">
+              <img src="{{ img_url }}" id = "{{ img_id }}"  style="border: solid 0px green">   
+            </li>
+        </script>
+        <script src="jqm.js"></script>
+    
+    </head>
+    <body >
+        <br>
+        <div data-role="page" id="first">
+            <div data-role="header">
+                <h1>My Header</h1>
+            <input type="number" id="Score">
+            <button id="Submit" >Submit</button>
+            </div>
+             <div role="main" class="ui-content">
+                <ul id="blogs" data-role="listview"></ul>
+                
+    
+                
+                
+                
+   <textarea id="messages" cols="70" rows="10" readonly>
+        Welcome to my Chat
+    </textarea>
+    <input type="text" id="name" placeholder="Your name" size="10">
+    <br>
+    <input type="text" id="msg" placeholder="Your message" size="30">
+    <input type = "number" id ="startNum" value = 1>
+    <button id="sendBtn" type="button">Send</button>
+     <button id="startButton" type="button">Start</button>
+             </div>
+        </div>
+    </body>
+    
